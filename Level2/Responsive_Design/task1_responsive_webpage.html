@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .text {
+                font-size: 1rem;
+            }
+
+            header {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .text {
+                font-size: 0.9rem;
+            }
+
+            header {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Responsive Webpage</h1>
+    </header>
+
+    <div class="content">
+        <p class="text">This is a simple responsive webpage created using HTML and CSS. The layout adjusts based on the screen size. Resize your browser to see the changes.</p>
+        <img src="https://img.freepik.com/free-vector/tiny-cute-children-learning-coding_74855-14175.jpg?t=st=1736017446~exp=1736021046~hmac=62caf535cd6d1b9574b619523017e34a14c3df64ced51e56debd607a0d089dee&w=900" alt="Sample Image">
+    </div>
+
+</body>
+</html>

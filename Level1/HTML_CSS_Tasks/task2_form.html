@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Form</title>
     <style>
-        /* Basic CSS styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: black;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,17 +16,27 @@
             height: 100vh;
         }
         .form-container {
-            background: #ffffff;
+            background: transparent;
             padding: 20px 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
             width: 300px;
+            border: 1px solid white;
         }
         .form-container h2 {
             margin-bottom: 20px;
             font-size: 1.5rem;
-            color: #333;
+            color: white;
+        }
+        .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: transparent;
         }
         .form-container input[type="text"] {
             width: 100%;
@@ -36,27 +45,33 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 1rem;
+            background-color: transparent;
+
         }
         .form-container button {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
+            background-color: black;
             color: white;
             border: none;
             border-radius: 4px;
             font-size: 1rem;
             cursor: pointer;
+            border: 1px solid white;
+            transition: 10s transform;
         }
         .form-container button:hover {
-            background-color: #0056b3;
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Simple Form</h2>
+        <h2> SignIn </h2>
         <form action="#" method="POST">
-            <input type="text" name="username" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="text" name="password" placeholder="Enter your password" required>
             <button type="submit">Submit</button>
         </form>
     </div>
